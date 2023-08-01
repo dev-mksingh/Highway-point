@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script", cursive;
+}
+
+body {
+  background-color: #acacac77;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.background {
+  flex-basis: 50%;
+  background-image: url("images/highway-point.png");
+  background-position: center;
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+  font-size: 60px;
+  text-align: center;
+}
+
+.pink {
+  color: #f032e0;
+}
+
+.blue {
+  color: #418df0;
+}
+
+img {
+  width: 50%;
+  height: 500px;
+}
+
+form {
+  margin-top: 40px;
+}
+
+legend {
+  text-align: center;
+  font-size: 50px;
+  color: #459cce;
+  text-decoration: underline;
+}
+
+label {
+  font-size: 25px;
+  color: #050305;
+  background-color: #ff78f4d5;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.menu-item {
+  display: inline-block;
+  border: 1px solid red;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+section {
+  display: none;
+}
+
+.option-container {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+h2 {
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
