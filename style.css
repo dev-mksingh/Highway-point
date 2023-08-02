@@ -108,9 +108,9 @@ h2 {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px;) {
   section img {
-    width: 70%;
+    width: 50%;
     display: block;
     margin: auto;
   }
