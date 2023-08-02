@@ -11,15 +11,21 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Dancing Script", cursive;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
 }
 
 body {
   background-color: #acacac77;
-}
-
-.container {
-  display: flex;
-  flex-direction: row-reverse;
 }
 
 .background {
@@ -58,7 +64,6 @@ legend {
   text-align: center;
   font-size: 50px;
   color: #459cce;
-  text-decoration: underline;
 }
 
 label {
@@ -108,10 +113,21 @@ h2 {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 800px;) {
+@media screen and (min-width: 800px) {
   section img {
     width: 50%;
     display: block;
     margin: auto;
+  }
+
+  .header {
+    width: 60%;
+    margin: auto;
+  }
+
+  label {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
