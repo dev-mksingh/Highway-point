@@ -1,9 +1,13 @@
-const inputs = document.querySelectorAll("input");
 const sections = document.querySelectorAll("section");
+const links = document.querySelectorAll(".label");
 
-inputs.forEach((input) => {
-  input.addEventListener("click", (e) => {
-    sections.forEach((section) => (section.style.display = "none"));
-    document.querySelector(`.${e.currentTarget.value}`).style.display = "block";
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    sections.forEach((section) => {
+      section.style.display = "none";
+    });
+    document.querySelector(
+      `${e.currentTarget.getAttribute("href")}`
+    ).style.display = "block";
   });
 });
